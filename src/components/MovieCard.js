@@ -22,7 +22,7 @@ class MovieCard extends React.Component{
                     <div className="title">{movie.Title}</div>
                     <div className="plot">{movie.Plot}</div>
                     <div className="footer">
-                        <div className="rating">{movie.imdbRating}</div>
+                        <div className="rating">{movie.imdbRating}<img alt="star" className="rating-star" src="https://cdn-icons-png.flaticon.com/128/1828/1828961.png"/></div>
                         {
                             isFavourite
                             ? <button className="unfavourite-btn" onClick={this.handleUnFavouriteClick}>Unfavourite</button>
